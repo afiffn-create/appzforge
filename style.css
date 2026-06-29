@@ -1,0 +1,48 @@
+body{
+    background-color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tombol-toko{
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+table img{
+    max-width: 100%;
+    height: auto;
+}
+
+table a img{
+    transition:transform 0.2 ease;
+}
+
+table a  img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+@media screen and (max-width:600px){
+    table{
+        display: block;
+        width: 92% !important;
+        margin: 15px auto;
+    }
+    tr,td{
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    td{
+        margin-bottom: 20px;
+        border-bottom: 1px solid blue;
+        padding: 10px;
+        text-align: center;
+    }
+}
